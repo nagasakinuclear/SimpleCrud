@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.Web", "SimpleCrud\SimpleCrud.Web.csproj", "{E83164F4-6FDF-4870-AE0F-A62A5C65A64F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCrud.Web", "SimpleCrud\SimpleCrud.Web.csproj", "{E83164F4-6FDF-4870-AE0F-A62A5C65A64F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.Sendbox", "SimpleCrud.Sendbox\SimpleCrud.Sendbox.csproj", "{4B223CD6-58C6-4F17-BE97-4B74B52B7731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCrud.Sandbox", "SimpleCrud.Sendbox\SimpleCrud.Sandbox.csproj", "{4B223CD6-58C6-4F17-BE97-4B74B52B7731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.Domain", "SimpleCrud.Domain\SimpleCrud.Domain.csproj", "{5C443DA7-1837-47C8-B87C-F7DBABE02A62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCrud.Domain", "SimpleCrud.Domain\SimpleCrud.Domain.csproj", "{5C443DA7-1837-47C8-B87C-F7DBABE02A62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.Application", "SimpleCrud.Application\SimpleCrud.Application.csproj", "{B1B4CFA9-BAB1-4DBE-88D8-7AC31544B4A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCrud.Application", "SimpleCrud.Application\SimpleCrud.Application.csproj", "{B1B4CFA9-BAB1-4DBE-88D8-7AC31544B4A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.DataAccess", "SimpleCrud.DataAccess\SimpleCrud.DataAccess.csproj", "{A12A0276-51B7-4B8F-89DE-837B1CFE014B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCrud.DataAccess", "SimpleCrud.DataAccess\SimpleCrud.DataAccess.csproj", "{A12A0276-51B7-4B8F-89DE-837B1CFE014B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.Shared", "SimpleCrud.Shared\SimpleCrud.Shared.csproj", "{625D6E87-A33B-4C95-AD37-089E3B3EA770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCrud.Shared", "SimpleCrud.Shared\SimpleCrud.Shared.csproj", "{625D6E87-A33B-4C95-AD37-089E3B3EA770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrud.SchemaReader", "SimpleCrud.SchemaReader\SimpleCrud.SchemaReader.csproj", "{3AD9FE70-E8FE-4F53-A0EC-A77D859A991C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{625D6E87-A33B-4C95-AD37-089E3B3EA770}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{625D6E87-A33B-4C95-AD37-089E3B3EA770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{625D6E87-A33B-4C95-AD37-089E3B3EA770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD9FE70-E8FE-4F53-A0EC-A77D859A991C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD9FE70-E8FE-4F53-A0EC-A77D859A991C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD9FE70-E8FE-4F53-A0EC-A77D859A991C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD9FE70-E8FE-4F53-A0EC-A77D859A991C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

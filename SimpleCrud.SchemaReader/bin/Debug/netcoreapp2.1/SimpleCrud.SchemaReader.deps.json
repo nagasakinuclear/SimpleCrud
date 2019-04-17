@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "753a2187548e520844cd580a4575755098088193"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "SimpleCrud.SchemaReader/1.0.0": {
+        "dependencies": {
+          "Database.Schema.Reader.Core": "1.2.4.17096"
+        },
+        "runtime": {
+          "SimpleCrud.SchemaReader.dll": {}
+        }
+      },
+      "Database.Schema.Reader.Core/1.2.4.17096": {
+        "runtime": {
+          "lib/net35/DatabaseSchemaReader.dll": {
+            "assemblyVersion": "1.2.4.17096",
+            "fileVersion": "1.2.4.17096"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleCrud.SchemaReader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Database.Schema.Reader.Core/1.2.4.17096": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CUcM+WjHkrxnXQNyi9yG+JK2r9CV0VpCwxdZ/B00OxV7aBJO3NKFOSrNNuTpDvUJE7ump5lUqlRLJwbTjOrxWw==",
+      "path": "database.schema.reader.core/1.2.4.17096",
+      "hashPath": "database.schema.reader.core.1.2.4.17096.nupkg.sha512"
+    }
+  }
+}
