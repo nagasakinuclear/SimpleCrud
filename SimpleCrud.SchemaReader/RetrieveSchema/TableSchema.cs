@@ -1,4 +1,5 @@
 ﻿
+using SimpleCrud.Configuration.Contracts;
 using SimpleCrud.SchemaReader.RetrieveSchema.Options.SelectionIndex;
 using System;
 using System.Collections.Generic;
@@ -9,18 +10,18 @@ namespace SimpleCrud.SchemaReader.RetrieveSchema
 {
     public class TableSchema
     {
-        private List<Table> _tables;
-        public TableSchema(string connectionString)
+        private IConfiguration _configuration;
+        public TableSchema(IConfiguration configuration)
         {
-            _tables = new List<Table>();
-
-            GetDataBaseSchema(connectionString);
+            _configuration = configuration;
         }
 
 
-        protected void GetDataBaseSchema(string ConnectionString)
+        public void GetDataBaseSchema()
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            List<Table> _tables = new List<Table>();
+
+            using (SqlConnection connection = new SqlConnection(_configuration.ConnectionString))
             {
                 connection.Open();
 
@@ -71,7 +72,7 @@ namespace SimpleCrud.SchemaReader.RetrieveSchema
                     }
 
                     string[] restrictionsForeignKeys = new string[4];
-                    restrictionsForeignKeys[2] = tableName;
+                    restrictionsForeignKeys[(int)RestrictionSelectionIndex.TableName] = tableName;
                     DataTable schemaForeignKeys = connection.GetSchema(CollectionNameOptions.ForeignKeys, restrictionsColumns);
 
                     foreach (DataRow rowFK in schemaForeignKeys.Rows)

@@ -6,6 +6,7 @@ namespace SimpleCrud.SchemaReader.RetrieveSchema.Options.SelectionIndex
 {
     public enum ForeignKeySelectionIndex
     {
-        Name = 2
+        Name = 2,
+        ReferencedTableName = 5
     }
 }
