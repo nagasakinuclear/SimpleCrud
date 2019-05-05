@@ -28,7 +28,7 @@ namespace SimpleCrud.SchemaReader.RetrieveSchema
 
                 foreach (DataRow rowTable in schemaTables.Rows)
                 {
-                    String tableName = rowTable.ItemArray[2].ToString();
+                    String tableName = rowTable.ItemArray[(int)TableSelectionIndex.Name].ToString();
                     Table currentTable = new Table(tableName);
 
                     string[] restrictionsColumns = new string[4];
@@ -44,7 +44,7 @@ namespace SimpleCrud.SchemaReader.RetrieveSchema
                     }
 
                     string[] restrictionsPrimaryKey = new string[4];
-                    restrictionsPrimaryKey[2] = tableName;
+                    restrictionsPrimaryKey[(int)RestrictionSelectionIndex.TableName] = tableName;
                     DataTable schemaPrimaryKey = connection.GetSchema(CollectionNameOptions.IndexColumns, restrictionsColumns);
 
                     foreach (DataRow rowPrimaryKey in schemaPrimaryKey.Rows)
@@ -81,7 +81,8 @@ namespace SimpleCrud.SchemaReader.RetrieveSchema
 
                         currentTable.ForeignKeys.Add(new ForeignKey()
                         {
-                            ForeignName = foreignName
+                            ForeignName = foreignName,
+                            ReferencedTableName = referencedTableName
                         });
                     }
 
