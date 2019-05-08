@@ -7,10 +7,13 @@ namespace SimpleCrud.Configuration
     public class Configuration : IConfiguration
     {
         public string ConnectionString { get; set; }
+        public string ProviderName { get; set; }
+
 
         public void LoadConfiguration(LoadConfigurationDto dto)
         {
             ConnectionString = dto.ConnectionString;
+            ProviderName = dto.ProviderName;
         }
     }
 }

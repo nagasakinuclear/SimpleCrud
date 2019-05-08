@@ -8,4 +8,10 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleCrud.Configuration\SimpleCrud.Configuration.csproj" />
+    <ProjectReference Include="..\SimpleCrud.SchemaReader.AppLogic\SimpleCrud.SchemaReader.AppLogic.csproj" />
+    <ProjectReference Include="..\SimpleCrud.SchemaReader\SimpleCrud.SchemaReader.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
